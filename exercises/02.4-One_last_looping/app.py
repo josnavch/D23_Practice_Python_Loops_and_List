@@ -5,4 +5,5 @@ my_sample_list[1] = "Steven"
 my_sample_list[len(my_sample_list)-1] = "Pepe"
 my_sample_list[0] = my_sample_list[2] + my_sample_list[4]
 my_sample_list.reverse()
-print (my_sample_list)
+for i in range(len(my_sample_list)):
+    print (my_sample_list[i])
