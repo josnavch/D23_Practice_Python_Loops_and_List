@@ -2,6 +2,15 @@ par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget bib
 
 counts = {}
 #your code go here:
+def count_char(algo):
+    algo = algo.lower()
+    for n in algo:
+        keys = counts.keys()
+        if n != " ":
+            if n in keys:
+                counts[n] += 1
+            else:
+                counts[n] = 1
+    return counts
 
-print(counts)
-
+print(count_char(par))
